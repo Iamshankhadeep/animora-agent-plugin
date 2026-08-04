@@ -1,0 +1,14 @@
+{
+  "name": "animora",
+  "owner": {
+    "name": "Animora",
+    "url": "https://animora.so"
+  },
+  "plugins": [
+    {
+      "name": "animora",
+      "source": "./claude",
+      "description": "Make launch videos from Claude Code — Animora's editor and generation tools over MCP, with verified renders that never charge on failure."
+    }
+  ]
+}

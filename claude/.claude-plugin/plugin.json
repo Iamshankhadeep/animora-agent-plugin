@@ -1,0 +1,27 @@
+{
+  "name": "animora",
+  "version": "0.1.0",
+  "description": "Animora for Claude Code: create video projects, edit real timelines, generate motion, voiceover, and captions — every render verified before it charges.",
+  "author": {
+    "name": "Animora",
+    "url": "https://animora.so"
+  },
+  "homepage": "https://animora.so/claude",
+  "userConfig": {
+    "ANIMORA_API_KEY": {
+      "type": "string",
+      "description": "Your Animora API key (starts with ak_) — mint one at https://animora.so/developers",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "mcpServers": {
+    "animora": {
+      "type": "http",
+      "url": "https://animora.so/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${userConfig.ANIMORA_API_KEY}"
+      }
+    }
+  }
+}
