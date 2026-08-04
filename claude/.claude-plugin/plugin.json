@@ -10,6 +10,7 @@
   "userConfig": {
     "ANIMORA_API_KEY": {
       "type": "string",
+      "title": "Animora API key",
       "description": "Your Animora API key (starts with ak_) — mint one at https://animora.so/developers",
       "sensitive": true,
       "required": true
